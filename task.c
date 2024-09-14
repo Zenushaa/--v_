@@ -83,48 +83,48 @@ float c,f;
     printf("the value of celsius converted into fahrenheit is: %.1f",f);
 }
 int three(){
- float principle1, rate1, time1, simpleInterest;
+ float p,r,t,sI;
     printf("Enter principle amount: ");
-    scanf("%f", &principle1);
+    scanf("%f", &p);
     printf("Enter rate of interest: ");
-    scanf("%f", &rate1);
+    scanf("%f", &r);
     printf("Enter number of years: ");
-    scanf("%f", &time1);
-    simpleInterest = (principle1 * rate1 * time1) / 100;
-    printf("The simple interest is: %1.3f \n", simpleInterest);
+    scanf("%f", &t);
+    sI = (p * r * t) / 100;
+    printf("The simple interest is: %1.3f \n", sI);
 
 }
 int four(){
- float radius1, height1, areaC, volumeC;
+ float r, h, a, v;
     int pi = 3.14159;
     printf("Enter radius of the circle: ");
-    scanf("%f", &radius1);
+    scanf("%f", &r);
     printf("Enter height of the cylinder: ");
-    scanf("%f", &height1);
-    areaC = pi * radius1 * radius1;
-    volumeC = 4/3 * pi * radius1 * radius1 * height1;
-    printf("The area of the circle is: %1.3f \n", areaC);
-    printf("The volume of the cylinder is: %1.3f \n", volumeC);
+    scanf("%f", &h);
+    a = pi * r * r;
+    v = 4/3 * pi * r * r * h;
+    printf("The area of the circle is: %1.3f \n", a);
+    printf("The volume of the cylinder is: %1.3f \n", v);
 
 }
 int five(){
- float sub1, sub2, sub3, sub4, sub5, average, sum, percentage;
+ float s1, s2, s3, s4, s5, a, sum, p;
     printf("Enter marks of 5 subjects: ");
-    scanf("%f, %f, %f, %f, %f", &sub1, &sub2, &sub3, &sub4, &sub5);
-    sum = (sub1 + sub2 + sub3 + sub4 + sub5);
-    average = (sum) / 5;
-    percentage = sum/500 * 100;
-    printf("The average marks is: %1.1f \n", average);
+    scanf("%f, %f, %f, %f, %f", &s1, &s2, &s3, &s4, &s5);
+    sum = (s1 + s2 + s3 + s4 + s5);
+    a = (sum) / 5;
+    p= sum/500 * 100;
+    printf("The average marks is: %1.1f \n", a);
     printf("The sum of marks is: %f \n", sum);
-    printf("The percentage is: %1.2f \n", percentage);
+    printf("The percentage is: %1.2f \n", p);
 }
 int six(){
- float length1, width1, perimeter;
+ float length, width, perimeter;
     printf("Enter length of the rectangle: ");
-    scanf("%f", &length1);
+    scanf("%f", &length);
     printf("Enter width of the rectangle: ");
-    scanf("%f", &width1);
-    perimeter = 2 * (length1 + width1);
+    scanf("%f", &width);
+    perimeter = 2 * (length + width);
     printf("The perimeter of the rectangle is: %1.3f \n", perimeter);
 }
 int seven(){
@@ -136,14 +136,14 @@ volume=(22/7)*r*r*h;
 printf("the volume of cylinder is: %.2f",volume);
 }
 int eight(){
- float principle2, rate2, time2, compoundInterest;
+ float principle, rate, time, compoundInterest;
     printf("Enter principle amount:");
-    scanf("%f", &principle2);
+    scanf("%f", &principle);
     printf("Enter rate of interest:");
-    scanf("%f", &rate2);
+    scanf("%f", &rate);
     printf("Enter number of years:");
-    scanf("%f", &time2);
-    compoundInterest = principle2 * pow((1 + rate2 / 100), time2)- principle2;
+    scanf("%f", &time);
+    compoundInterest = principle * pow((1 + rate / 100), time)- principle;
     printf("The compound interest is: %1.3f \n", compoundInterest);
 
 }
